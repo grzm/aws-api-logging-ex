@@ -1,0 +1,10 @@
+{:paths ["src"]
+ :deps {org.clojure/clojure {:mvn/version "1.10.1"}
+        com.cognitect.aws/api {:mvn/version "0.8.524" :aws/serviceFullName ""}
+        com.cognitect.aws/endpoints {:mvn/version "1.1.12.69" :aws/serviceFullName ""}
+        com.cognitect.aws/s3 {:mvn/version "814.2.991.0" :aws/serviceFullName "Amazon Simple Storage Service"}
+        com.cognitect.aws/sts {:mvn/version "811.2.958.0", :aws/serviceFullName "AWS Security Token Service"}}
+ :aliases
+ {:quiet {:extra-paths ["resources/jul"]
+          :jvm-opts ["-Djava.util.logging.config.file=logging.properties"]}
+  :REALLY {:extra-paths ["resources/jetty"]}}}
