@@ -34,14 +34,14 @@ which specifies the config logging level.
 ### Quiet
 
 ```
- clj -A:quiet -X com.grzm.ex.pod-aws/ex
+clj -A:quiet -X com.grzm.ex.pod-aws/ex
 2021-10-30 10:48:31.842:INFO::main: Logging initialized @5090ms to org.eclipse.jetty.util.log.StdErrLog
 (:Buckets :Owner)
 (:UserId :Account :Arn)
 ```
 
-See? Is that great? ... Seriously? What's that Logging intialized line
-still doing there? I thought I told you to be quiet?
+See? Isn't that great? ... Wait. Seriously? What's that `Logging initialized`
+line still doing there? _*I thought I told you to be quiet?!*_
 
 ### REALLY Quiet!
 
@@ -57,4 +57,4 @@ To get rid of the "Logging initialized, have
 
 Crikey.
 
-See [deps.edn]() for details.
+See [deps.edn](./deps.edn) for details.
